@@ -24,6 +24,15 @@ h1 {
 	font-size: 3rem;
 }
 
+.h2-disques {
+	color: white;
+	background-color: rgb(70, 70, 70);
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+
+
 
 /* Mise en page (positionnement)
 ========================================================================== */
@@ -37,6 +46,17 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   gap: 1rem;
+}
+
+.grid-disques {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 2rem;
+}
+
+.flex-albums {
+	display: block;
+	text-align: center;
 }
 
 /* Header / Navigations / Footer 
@@ -113,11 +133,60 @@ header nav > a:hover {
 	justify-content: center;
 }
 
+footer {
+	background-color: rgb(226, 226, 226);
+	padding-bottom: 0.1rem ;
+}
+
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
+
+
 /* Formulaires
 ========================================================================== */
+
+#cacher {
+	font-size: 0;
+}
+
+#txt-nom , #password {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid black;
+	margin: 0.5rem 0;
+}
+
+.btn-connexion {
+	padding: 1rem 2rem;
+	margin-top: 1.5rem;
+	font-size: 1.3rem;
+	background-color: rgb(50, 50, 50);
+	color: white;
+}
+
+.container-connexion label {
+	font-size: 1.3rem;
+}
+
+.recherche-disques {
+	display: flex;
+}
+
+.btn-chercher {
+	padding: 0.8rem;
+	background-color: rgb(50, 50, 50);
+	color: white;
+}
+
+.btn-chercher:hover {
+	cursor: pointer;
+}
+
+#txt-recherche {
+	padding: 0.8rem;
+	width: 25rem;
+}
 
 /* Règles spécifiques aux pages
 ========================================================================== */
@@ -141,19 +210,36 @@ header nav > a:hover {
 	width: 80%;
 }
 
-#txt-nom , #password {
-	width: 100%;
-	padding: 1rem;
-	border: 1px solid black;
-	margin: 0.5rem 0;
+/* Disques */
+
+.flex-disques {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.btn-connexion {
-	padding: 1rem 2rem;
-	margin-top: 1.5rem;
+.grid-disques h3 {
 	font-size: 1.3rem;
+	margin: 0.8rem;
 }
 
-.container-connexion label {
-	font-size: 1.3rem;
+.grid-disques p {
+	margin: 0.8rem 0 0 0;
+}
+
+.grid-disques button {
+	padding: 0.6rem 1.2rem;
+	border-radius: 0;
+	border: 0px;
+	background-color: rgb(50, 50, 50);
+	color: white;
+}
+
+.grid-disques button:hover {
+	cursor: pointer;
+}
+
+.grid-disques a {
+	text-decoration: none;
+	color: black;
 }
