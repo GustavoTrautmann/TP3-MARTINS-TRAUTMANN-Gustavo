@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+/* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
+========================================================================== */
+
+body {
+  background-color: white;
+}
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+
+/* Mise en page (positionnement)
+========================================================================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.git-1fr-1fr-1fr {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+}
+
+/* Header / Navigations / Footer 
+========================================================================== */
+
+/* header */
+
+header {
+	background-color: rgb(226, 226, 226);
+	padding: 1rem;
+	margin-bottom: 3rem;
+}
+
+header > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+header img {
+	width: 300px;
+}
+
+header nav {
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+header nav > a{
+	color: black;
+	text-decoration: none;
+}
+
+header nav > a:hover {
+	text-decoration: underline;
+}
+
+.nav-actif {
+	text-decoration: underline;
+}
+
+/* footer */
+
+.couleur-fond-footer {
+	background-color: rgb(70, 70, 70);
+}
+
+.footer-haut {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	margin-top: 3rem;
+
+	color: white;
+}
+
+.footer-haut address a {
+	color: black;
+	text-decoration: none;
+	font-style: normal;
+	border: 1px solid white;
+	padding: 0.8rem 1.2rem;
+	background-color: white;
+}
+
+.footer-haut p {
+	font-size: 1.3rem;
+}
+
+.footer-bas {
+	display: flex;
+	justify-content: center;
+}
+
+/* Composantes générales (exemples : section, cartes, tableaux, etc.)
+========================================================================== */
+
+/* Formulaires
+========================================================================== */
+
+/* Règles spécifiques aux pages
+========================================================================== */
+
+/* page de connexion */
+
+.span-2 {
+	grid-column: span 2;
+	grid-row: span 2;
+	width: 100%;
+}
+
+.connection {
+	background-color: rgb(224, 224, 224);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-connexion {
+	width: 80%;
+}
+
+#txt-nom , #password {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid black;
+	margin: 0.5rem 0;
+}
+
+.btn-connexion {
+	padding: 1rem 2rem;
+	margin-top: 1.5rem;
+	font-size: 1.3rem;
+}
+
+.container-connexion label {
+	font-size: 1.3rem;
+}
