@@ -31,8 +31,30 @@ h1 {
 	font-size: 2rem;
 }
 
+hr {
+	border: 0.7px solid black;
+}
 
 
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 3px solid black;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 1rem;
+	text-align: center;
+}
+
+td {
+	background-color: white;
+}
+
+.tbl-border {
+	border: 3px solid black;
+}
 
 /* Mise en page (positionnement)
 ========================================================================== */
@@ -242,4 +264,87 @@ footer {
 .grid-disques a {
 	text-decoration: none;
 	color: black;
+}
+
+/* fiche disque */
+
+.grid-fiche-disque {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+.grid-fiche-disque > section {
+	background-color: rgb(226, 226, 226);
+	padding: 2rem 2rem 0 2rem;
+}
+
+.grid-fiche-disque > img {
+	width: 100%;
+}
+
+.album-x > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.div-fiche > p {
+	color: darkred;
+	font-size: 2.3rem;
+	font-weight: 550;
+	margin: 0 0 1rem 0;
+}
+
+.div-fiche > h1 {
+	margin: 0 0 1rem 0;
+}
+
+.album-x p {
+	font-size: 1.3rem;
+}
+
+.album-x a {
+	font-weight: normal;
+	color: darkblue;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+.div-fiche button {
+	margin-bottom: 1rem;
+	padding: 0.8rem;
+	background-color: rgb(50, 50, 50);
+	color: white;
+	font-size: 1.3rem;
+}
+
+.details-sup {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2rem;
+}
+
+.span-2 {
+	grid-column: 2/2;
+}
+
+.parution {
+	background-color: rgb(226, 226, 226);
+	padding: 2rem;
+}
+
+.parution h3 {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+.mot-cle p a{
+	display: inline-block;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: darkblue;
+	border: 1px solid darkblue;
+	padding: 0.2rem;
+	margin: 0.3rem;
 }
